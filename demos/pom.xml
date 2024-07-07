@@ -17,6 +17,10 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <maven.compiler.source>1.8</maven.compiler.source>
         <maven.compiler.target>1.8</maven.compiler.target>
+
+        <joml.version>1.10.6</joml.version>
+        <joml-primitives.version>1.10.0</joml-primitives.version>
+        <lwjgl3-awt.version>0.1.8</lwjgl3-awt.version>
         <lwjgl.version>3.3.3</lwjgl.version>
         <lwjgl.natives>natives-linux</lwjgl.natives>
         </properties>
@@ -94,7 +98,23 @@
             <groupId>org.lwjgl</groupId>
             <artifactId>lwjgl-stb</artifactId>
             <classifier>${lwjgl.natives}</classifier>
-            </dependency>  </dependencies>
+            </dependency>  
+        <dependency>
+            <groupId>org.joml</groupId>
+            <artifactId>joml</artifactId>
+            <version>${joml.version}</version>
+        </dependency>
+            <dependency>
+            <groupId>org.joml</groupId>
+            <artifactId>joml-primitives</artifactId>
+            <version>${joml-primitives.version}</version>
+        </dependency>
+            <dependency>
+            <groupId>org.lwjglx</groupId>
+            <artifactId>lwjgl3-awt</artifactId>
+            <version>${lwjgl3-awt.version}</version>
+        </dependency>
+        </dependencies>
 
     <build>
         <pluginManagement><!-- lock down plugins versions to avoid using Maven defaults (may be moved to parent pom) -->
