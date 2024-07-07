@@ -1,4 +1,4 @@
-package nttn;
+package nttn.core;
 
 import java.util.Arrays; 
 
@@ -50,5 +50,5 @@ public class Bitmap {
     }
 
     public int getWidth() {return this.width;}
-    public int getHeight() {return this.width;}
+    public int getHeight() {return this.height;}
 }

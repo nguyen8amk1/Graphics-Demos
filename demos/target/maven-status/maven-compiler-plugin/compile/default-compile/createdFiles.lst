@@ -1,3 +1,4 @@
-nttn/Bitmap.class
+nttn/core/Bitmap.class
+nttn/demo/Starfield.class
 nttn/App.class
-nttn/Display.class
+nttn/core/Display.class
