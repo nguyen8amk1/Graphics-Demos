@@ -6,9 +6,10 @@ public class App
     public static void main( String[] args )
     {
         // Test some demos 
-        // Starfield starfield = new Starfield();
-        // starfield.run();
-        LWJGL_HelloWorld helloworld = new LWJGL_HelloWorld();
-        helloworld.run();
+        iDemo starfield = new Starfield();
+        starfield.run();
+
+        // LWJGL_HelloWorld helloworld = new LWJGL_HelloWorld();
+        // helloworld.run();
     }
 }

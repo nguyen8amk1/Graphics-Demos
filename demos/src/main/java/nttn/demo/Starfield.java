@@ -3,7 +3,7 @@ import nttn.core.Display;
 import nttn.core.Bitmap;
 
 
-public class Starfield 
+public class Starfield implements iDemo
 {
     private final float starsX[], starsY[], starsZ[]; 
     private final int starsCount = 1000;
