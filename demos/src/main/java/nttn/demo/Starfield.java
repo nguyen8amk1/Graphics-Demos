@@ -55,7 +55,6 @@ public class Starfield
                 }
 
 
-                // TODO: convert to screen coord before render 
                 int x = (int)((starsX[i]/starsZ[i]) * halfWidth + halfWidth);
                 int y = (int)((starsY[i]/starsZ[i]) * halfHeight + halfHeight);
 
@@ -70,6 +69,7 @@ public class Starfield
                 //System.out.println(x + " " + y);
                 bitmap.drawPixel(x, y, (byte)255, (byte)255, (byte)255, (byte)255);
             }
+
 
             prevTime = currentTime;
         }

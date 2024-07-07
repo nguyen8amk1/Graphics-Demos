@@ -1,3 +1,5 @@
 /home/nttn/Documents/GitHub/Graphics-Demos/demos/src/main/java/nttn/App.java
-/home/nttn/Documents/GitHub/Graphics-Demos/demos/src/main/java/nttn/Display.java
-/home/nttn/Documents/GitHub/Graphics-Demos/demos/src/main/java/nttn/Bitmap.java
+/home/nttn/Documents/GitHub/Graphics-Demos/demos/src/main/java/nttn/demo/LWJGL_HelloWorld.java
+/home/nttn/Documents/GitHub/Graphics-Demos/demos/src/main/java/nttn/core/Bitmap.java
+/home/nttn/Documents/GitHub/Graphics-Demos/demos/src/main/java/nttn/demo/Starfield.java
+/home/nttn/Documents/GitHub/Graphics-Demos/demos/src/main/java/nttn/core/Display.java

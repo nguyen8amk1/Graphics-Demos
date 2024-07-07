@@ -1,10 +1,5 @@
 package nttn;
-import nttn.demo.Starfield;
-
-/**
- * Hello world!
- *
- */
+import nttn.demo.*;
 
 public class App 
 {
@@ -13,5 +8,7 @@ public class App
         // Test some demos 
         Starfield starfield = new Starfield();
         starfield.run();
+        // LWJGL_HelloWorld helloworld = new LWJGL_HelloWorld();
+        // helloworld.run();
     }
 }

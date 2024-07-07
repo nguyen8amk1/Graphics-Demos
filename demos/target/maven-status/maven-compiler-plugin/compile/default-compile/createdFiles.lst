@@ -2,3 +2,4 @@ nttn/core/Bitmap.class
 nttn/demo/Starfield.class
 nttn/App.class
 nttn/core/Display.class
+nttn/demo/LWJGL_HelloWorld.class
