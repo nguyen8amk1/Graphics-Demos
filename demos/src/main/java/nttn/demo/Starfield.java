@@ -1,6 +1,5 @@
 package nttn.demo;
-import nttn.core.Display;
-import nttn.core.Bitmap;
+import nttn.core.*;
 
 
 //public class Starfield implements iDemo
@@ -15,8 +14,8 @@ public class Starfield implements iDemoContent
     private int halfWidth;
     private int halfHeight;
 
-    //private final Display display; 
-    private Bitmap bitmap; 
+    private GraphicsOutputFunctions gfxOutput; 
+    private GraphicsInputFunctions gfxInput; 
     
     final int speed = 1;
 
@@ -40,15 +39,12 @@ public class Starfield implements iDemoContent
         for(int i = 0; i < starsCount; i++) {
             this.initStar(i);
         }
-    
-        // display = new Display(800, 600, "Demo Starfield");
-        // bitmap = new Bitmap(display.getWidth(), display.getHeight());
         
-        this.bitmap = templateInfo.getBitmap();
-        //Bitmap bitmap = templateInfo.getBitmap();
+        gfxOutput = new GraphicsOutputFunctions(templateInfo.getBitmap());
+        gfxInput = new GraphicsInputFunctions(templateInfo.getBitmap());
 
-        width = bitmap.getWidth();
-        height = bitmap.getHeight();
+        width = gfxInput.getXMax();
+        height = gfxInput.getYMax();
         halfWidth = width/2;
         halfHeight = height/2;
     }
@@ -75,8 +71,7 @@ public class Starfield implements iDemoContent
                 continue;
             }
 
-            //System.out.println(x + " " + y);
-            bitmap.drawPixel(x, y, (byte)255, (byte)255, (byte)255, (byte)255);
+            gfxOutput.setPixel(x, y, (byte)255, (byte)255, (byte)255, (byte)255);
         }
 
     }

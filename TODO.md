@@ -1,5 +1,11 @@
 # TODO
-Render the first triangle (2h) []
-
+Implements all the output primitives: 
+    point @Current
+    line  @Next
+    circle @Next
+    ellipse 
+    curves @Exciting
+    filled area primitives
 
 # DONE
+...@Later

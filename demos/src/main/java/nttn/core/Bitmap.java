@@ -20,7 +20,7 @@ public class Bitmap {
     //     Arrays.fill(this.components, shade)
     // }
 
-    public void drawPixel(int x, int y, byte r, byte g, byte b, byte a) {
+    public void setPixel(int x, int y, byte r, byte g, byte b, byte a) {
         // NOTE: we're using ABRG format 
         int index = (x + y*width)*4;
         this.components[index] = a;

@@ -1,8 +1,10 @@
 nttn/demo/iDemoContent.class
 nttn/App.class
+nttn/core/GraphicsOutputFunctions.class
 nttn/core/Display.class
 nttn/demo/DemoTemplate.class
+nttn/demo/PointsLines.class
 nttn/core/Bitmap.class
 nttn/demo/Starfield.class
-nttn/demo/Points.class
+nttn/core/GraphicsInputFunctions.class
 nttn/demo/LWJGL_HelloWorld.class

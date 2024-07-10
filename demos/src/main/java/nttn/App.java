@@ -17,10 +17,10 @@ public class App
 
         DemoTemplate demo = new DemoTemplate();
 
-        iDemoContent points = new Points();
-        //demo.run(points);
+        iDemoContent points = new PointsLines();
+        demo.run(points);
 
         iDemoContent starfield = new Starfield();
-        demo.run(starfield);
+        //demo.run(starfield);
     }
 }
