@@ -1,6 +1,8 @@
-nttn/demo/iDemo.class
-nttn/core/Bitmap.class
-nttn/demo/Starfield.class
+nttn/demo/iDemoContent.class
 nttn/App.class
 nttn/core/Display.class
+nttn/demo/DemoTemplate.class
+nttn/core/Bitmap.class
+nttn/demo/Starfield.class
+nttn/demo/Points.class
 nttn/demo/LWJGL_HelloWorld.class
