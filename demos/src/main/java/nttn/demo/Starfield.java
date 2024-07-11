@@ -31,7 +31,7 @@ public class Starfield implements iDemoContent
     }
 
     @Override
-    public void load(DemoTemplate templateInfo) {
+    public void setup(DemoTemplate templateInfo) {
         starsX = new float[starsCount];
         starsY = new float[starsCount];
         starsZ = new float[starsCount];
@@ -50,7 +50,7 @@ public class Starfield implements iDemoContent
     }
 
     @Override
-    public void run(float deltaTime) {
+    public void loop(float deltaTime) {
         for(int i = 0; i < starsCount; i++) {
             starsZ[i] -= deltaTime * speed; 
 
@@ -71,7 +71,7 @@ public class Starfield implements iDemoContent
                 continue;
             }
 
-            gfxOutput.setPixel(x, y, (byte)255, (byte)255, (byte)255, (byte)255);
+            gfxOutput.point(x, y);
         }
 
     }

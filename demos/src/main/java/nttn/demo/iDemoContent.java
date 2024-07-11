@@ -1,6 +1,6 @@
 package nttn.demo;
 
 public interface iDemoContent {
-    public void load(DemoTemplate templateInfo);
-    public void run(float deltaTime);
+    public void setup(DemoTemplate templateInfo);
+    public void loop(float deltaTime);
 }

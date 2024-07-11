@@ -14,13 +14,12 @@ public class App
         //iDemo points = new Points();
         
 
-
         DemoTemplate demo = new DemoTemplate();
 
-        iDemoContent points = new PointsLines();
-        demo.run(points);
+        iDemoContent pointsLines = new PointsLines();
+        demo.run(pointsLines);
 
-        iDemoContent starfield = new Starfield();
-        //demo.run(starfield);
+        // iDemoContent starfield = new Starfield();
+        // demo.run(starfield);
     }
 }

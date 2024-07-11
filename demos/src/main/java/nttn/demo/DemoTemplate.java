@@ -16,7 +16,7 @@ public class DemoTemplate {
 
     public void run(iDemoContent demo)
     {
-        demo.load(this);
+        demo.setup(this);
 
         long prevTime  = System.nanoTime();
 
@@ -28,7 +28,7 @@ public class DemoTemplate {
 
             float deltaTime = (currentTime - prevTime)/1000000000.0f;
 
-            demo.run(deltaTime);
+            demo.loop(deltaTime);
 
             // // work 
             //

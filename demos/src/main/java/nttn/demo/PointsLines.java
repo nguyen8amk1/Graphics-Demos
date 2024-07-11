@@ -1,4 +1,5 @@
 package nttn.demo;
+
 import nttn.core.*;
 
 
@@ -8,15 +9,20 @@ public class PointsLines implements iDemoContent
     private GraphicsInputFunctions gfxInput; 
 
     @Override
-    public void load(DemoTemplate templateInfo) {
+    public void setup(DemoTemplate templateInfo) {
         gfxOutput = new GraphicsOutputFunctions(templateInfo.getBitmap());
         gfxInput = new GraphicsInputFunctions(templateInfo.getBitmap());
 
     }
 
     @Override
-    public void run(float deltaTime)
-    {
-        gfxOutput.point(200, 200, (byte)255, (byte)255, (byte)255, (byte)255);
+    public void loop(float deltaTime) {
+        gfxOutput.point(400, 200);
+        gfxOutput.point(400, 300);
+        gfxOutput.point(400, 400);
+        gfxOutput.point(400, 500);
+        gfxOutput.point(400, 550);
+
+        gfxOutput.ddaLine(200, 200, 400, 300);
     }
 }

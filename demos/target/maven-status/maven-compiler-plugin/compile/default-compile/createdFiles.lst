@@ -7,4 +7,5 @@ nttn/demo/PointsLines.class
 nttn/core/Bitmap.class
 nttn/demo/Starfield.class
 nttn/core/GraphicsInputFunctions.class
+nttn/core/CommonMath.class
 nttn/demo/LWJGL_HelloWorld.class
