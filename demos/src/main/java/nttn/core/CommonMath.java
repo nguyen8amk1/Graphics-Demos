@@ -22,6 +22,10 @@ public final class CommonMath {
     public static int round(float num) {
         return Math.round(num);
     }
+    
+    public static int round(double num) {
+        return Math.round((float)num);
+    }
 
     public static float abs (float num) {
         return Math.abs(num);

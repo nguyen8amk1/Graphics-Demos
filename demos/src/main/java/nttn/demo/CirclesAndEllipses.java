@@ -3,7 +3,7 @@ package nttn.demo;
 import nttn.core.*;
 
 
-public class PointsLines implements iDemoContent
+public class CirclesAndEllipses implements iDemoContent
 {
     private GraphicsOutputFunctions gfxOutput; 
     private GraphicsInputFunctions gfxInput; 
@@ -17,20 +17,7 @@ public class PointsLines implements iDemoContent
 
     @Override
     public void loop(float deltaTime) {
-        gfxOutput.point(400, 200);
-        gfxOutput.point(400, 300);
-        gfxOutput.point(400, 400);
-        gfxOutput.point(400, 500);
-        gfxOutput.point(400, 550);
-
-        // gfxOutput.ddaLine(200, 200, 400, 300);
-        gfxOutput.line(200, 200, 400, 300);
         gfxOutput.circleMidpoint(200, 200, 100);
-
-
-
-        //const int[] worldCoordPoints = []; 
-        //gfxOutput.polyLine(worldCoordPoints);
-        // gfxOutput.bresLine(200, 200, 400, 300);
+        gfxOutput.ellipseMidpoint(400, 200, 100, 200);
     }
 }

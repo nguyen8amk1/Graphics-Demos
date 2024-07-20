@@ -1,5 +1,11 @@
 /home/nttn/Documents/GitHub/Graphics-Demos/demos/src/main/java/nttn/App.java
 /home/nttn/Documents/GitHub/Graphics-Demos/demos/src/main/java/nttn/demo/LWJGL_HelloWorld.java
+/home/nttn/Documents/GitHub/Graphics-Demos/demos/src/main/java/nttn/demo/DemoTemplate.java
 /home/nttn/Documents/GitHub/Graphics-Demos/demos/src/main/java/nttn/core/Bitmap.java
+/home/nttn/Documents/GitHub/Graphics-Demos/demos/src/main/java/nttn/core/CommonMath.java
 /home/nttn/Documents/GitHub/Graphics-Demos/demos/src/main/java/nttn/demo/Starfield.java
+/home/nttn/Documents/GitHub/Graphics-Demos/demos/src/main/java/nttn/core/GraphicsOutputFunctions.java
+/home/nttn/Documents/GitHub/Graphics-Demos/demos/src/main/java/nttn/demo/iDemoContent.java
 /home/nttn/Documents/GitHub/Graphics-Demos/demos/src/main/java/nttn/core/Display.java
+/home/nttn/Documents/GitHub/Graphics-Demos/demos/src/main/java/nttn/core/GraphicsInputFunctions.java
+/home/nttn/Documents/GitHub/Graphics-Demos/demos/src/main/java/nttn/demo/PointsLines.java
