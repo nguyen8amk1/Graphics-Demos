@@ -2,10 +2,10 @@ package nttn.core;
 
 import java.util.Arrays; 
 
-public class GraphicsInputFunctions { 
+public class GraphicsInput { 
     private final Bitmap bitmap;
 
-    public GraphicsInputFunctions(Bitmap bitmap) {
+    public GraphicsInput(Bitmap bitmap) {
         this.bitmap = bitmap;
     } 
 

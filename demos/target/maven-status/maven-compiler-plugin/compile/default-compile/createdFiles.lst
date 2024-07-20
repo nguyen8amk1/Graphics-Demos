@@ -1,12 +1,12 @@
 nttn/demo/iDemoContent.class
 nttn/App.class
-nttn/core/GraphicsOutputFunctions.class
 nttn/core/Display.class
 nttn/demo/DemoTemplate.class
 nttn/demo/PointsLines.class
+nttn/core/GraphicsInput.class
 nttn/core/Bitmap.class
 nttn/demo/Starfield.class
-nttn/core/GraphicsInputFunctions.class
+nttn/core/GraphicsOutput.class
 nttn/core/CommonMath.class
 nttn/demo/CirclesAndEllipses.class
 nttn/demo/LWJGL_HelloWorld.class

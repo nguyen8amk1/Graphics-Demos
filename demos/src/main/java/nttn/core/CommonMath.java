@@ -2,6 +2,12 @@ package nttn.core;
 
 import java.util.Random;
 
+// public static enum COMPARE_MODES {
+//     GREATER_THAN, 
+//     LESS_THAN, 
+//     EQUAL_TO
+// }
+
 public final class CommonMath { 
     private static final Random random = new Random();
 
@@ -30,4 +36,29 @@ public final class CommonMath {
     public static float abs (float num) {
         return Math.abs(num);
     }
+
+    public static float sqrt (float num) {
+        return (float)Math.sqrt(num);
+    }
+
+    // public static int fCompare(float a, COMPARE_MODES mode,  float b) {
+    //     int c = Float.compare(a, b);
+    //     switch(mode){
+    //         case COMPARE_MODES.GREATER_THAN: 
+    //         break;
+    //         case COMPARE_MODES.LESS_THAN: 
+    //         break;
+    //         case COMPARE_MODES.EQUAL_TO: 
+    //         break;
+    //     }
+    //     if(c > 0) {
+    //
+    //     }
+    //     else if(c > 0) {
+    //
+    //     }
+    //     if(c > 0) {
+    //
+    //     }
+    // }
 }

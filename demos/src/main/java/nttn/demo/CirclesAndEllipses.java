@@ -5,14 +5,13 @@ import nttn.core.*;
 
 public class CirclesAndEllipses implements iDemoContent
 {
-    private GraphicsOutputFunctions gfxOutput; 
-    private GraphicsInputFunctions gfxInput; 
+    private GraphicsOutput gfxOutput; 
+    private GraphicsInput gfxInput; 
 
     @Override
-    public void setup(DemoTemplate templateInfo) {
-        gfxOutput = new GraphicsOutputFunctions(templateInfo.getBitmap());
-        gfxInput = new GraphicsInputFunctions(templateInfo.getBitmap());
-
+    public void setup(final GraphicsInput gfxInput, final GraphicsOutput gfxOutput) {
+        this.gfxOutput = gfxOutput;
+        this.gfxInput = gfxInput;
     }
 
     @Override

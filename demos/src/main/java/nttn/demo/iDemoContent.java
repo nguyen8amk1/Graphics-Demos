@@ -1,6 +1,7 @@
 package nttn.demo;
+import nttn.core.*;
 
 public interface iDemoContent {
-    public void setup(DemoTemplate templateInfo);
-    public void loop(float deltaTime);
+    public void setup(final GraphicsInput gfxInput, final GraphicsOutput gfxOutput);
+    public void loop(final float deltaTime);
 }

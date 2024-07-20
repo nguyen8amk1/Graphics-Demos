@@ -15,13 +15,20 @@ public class App
         
         DemoTemplate demo = new DemoTemplate();
 
-        // iDemoContent pointsLines = new PointsLines();
-        // demo.run(pointsLines);
 
+        iDemoContent starfield = new Starfield();
+        iDemoContent pointsLines = new PointsLines();
         iDemoContent circlesAndEllipses = new CirclesAndEllipses();
-        demo.run(circlesAndEllipses);
 
-        // iDemoContent starfield = new Starfield();
-        // demo.run(starfield);
+        //demo.run(starfield);
+        demo.run(pointsLines);
+        //demo.run(circlesAndEllipses);
+
+        // iDemoContent conicSections = new ConicSections();
+        // demo.run(conicSections);
+
+        // iDemoContent polynomialsAndSplines = new PolynomialsAndSplines();
+        // demo.run(polynomialsAndSplines);
+
     }
 }

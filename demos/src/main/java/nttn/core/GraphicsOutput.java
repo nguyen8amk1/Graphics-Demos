@@ -2,14 +2,26 @@ package nttn.core;
 
 import java.util.Arrays; 
 
-public class GraphicsOutputFunctions { 
-    private final Bitmap bitmap;
+public class GraphicsOutput { 
     private final byte a = (byte)255, r = (byte)255, g = (byte)255, b = (byte)255; 
     private final CommonMath m = new CommonMath();  
+    private final Display display;
+    private final Bitmap bitmap;
 
-    public GraphicsOutputFunctions(Bitmap bitmap) {
-        this.bitmap = bitmap;
+    public GraphicsOutput() {
+        display = new Display(800, 600, "Points demo");
+        bitmap = new Bitmap(display.getWidth(), display.getHeight());
     } 
+
+    public Bitmap getBitmap() { return bitmap; }
+
+    public void clear(byte shade) {
+        bitmap.clear(shade);
+    }
+
+    public void update() {
+        display.renderBitmap(bitmap);
+    }
 
     public void setPixel(int x, int y) {
         bitmap.setPixel(x, y, a, r, g, b);
@@ -167,7 +179,36 @@ public class GraphicsOutputFunctions {
 
     }
 
+    public void conicSection(final int x, final int y, final float A, final float B, final float C, final float D, final float E, final float F) {
+        // TODO: Ax^2 + By^2 + Cxy + Dx + Ey + F = 0
+        // using midpoint algorithm to approximate points to draw 
+        final float discriminant = m.sqrt(B) - 4*A*C;
+        //System.out.println(discriminant);
+        // if(m.fCompare(discriminant, COMPARE_MODES.GREATER_THAN, 0)) {
+        //     // TODO: 
+        // }
+        // else if(m.fCompare(discriminant, COMPARE_MODES.LESS_THAN, 0)) {
+        //     // TODO: 
+        // }
+        // else {
+        //     // TODO: 
+        // }
+
+    }
+
+    public void generalizedDrawingCurves(int[] wcPoints, int id, float[] datalist) {
+        // TODO: convert world coords -> screen coords first, before doing anything
+        // TODO: implement generalized curves 
+        // This function can draw
+        // circle, ellipse, splines, curve sections and arcs 
+
+    }
+
     public void fillArea() { // input: an array of vertices
+
+    }
+
+    public void cellArray() {
 
     }
 }

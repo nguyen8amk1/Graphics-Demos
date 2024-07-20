@@ -5,7 +5,6 @@ import nttn.core.*;
 //public class Starfield implements iDemo
 public class Starfield implements iDemoContent
 {
-
     private float starsX[], starsY[], starsZ[]; 
     private int starsCount = 1000;
 
@@ -14,8 +13,8 @@ public class Starfield implements iDemoContent
     private int halfWidth;
     private int halfHeight;
 
-    private GraphicsOutputFunctions gfxOutput; 
-    private GraphicsInputFunctions gfxInput; 
+    private GraphicsOutput gfxOutput; 
+    private GraphicsInput gfxInput; 
     
     final int speed = 1;
 
@@ -31,7 +30,7 @@ public class Starfield implements iDemoContent
     }
 
     @Override
-    public void setup(DemoTemplate templateInfo) {
+    public void setup(final GraphicsInput gfxInput, final GraphicsOutput gfxOutput) {
         starsX = new float[starsCount];
         starsY = new float[starsCount];
         starsZ = new float[starsCount];
@@ -40,8 +39,8 @@ public class Starfield implements iDemoContent
             this.initStar(i);
         }
         
-        gfxOutput = new GraphicsOutputFunctions(templateInfo.getBitmap());
-        gfxInput = new GraphicsInputFunctions(templateInfo.getBitmap());
+        this.gfxOutput = gfxOutput;
+        this.gfxInput = gfxInput;
 
         width = gfxInput.getXMax();
         height = gfxInput.getYMax();
@@ -50,7 +49,7 @@ public class Starfield implements iDemoContent
     }
 
     @Override
-    public void loop(float deltaTime) {
+    public void loop(final float deltaTime) {
         for(int i = 0; i < starsCount; i++) {
             starsZ[i] -= deltaTime * speed; 
 
