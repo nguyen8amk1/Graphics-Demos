@@ -5,30 +5,19 @@ public class App
 {
     public static void main( String[] args )
     {
-        // Test some demos 
-        // iDemo starfield = new Starfield();
-        // starfield.run();
-
-        // LWJGL_HelloWorld helloworld = new LWJGL_HelloWorld();
-        // helloworld.run();
-        //iDemo points = new Points();
-        
         DemoTemplate demo = new DemoTemplate();
 
 
         iDemoContent starfield = new Starfield();
         iDemoContent pointsLines = new PointsLines();
         iDemoContent circlesAndEllipses = new CirclesAndEllipses();
+        iDemoContent curves = new Curves();
 
         //demo.run(starfield);
-        demo.run(pointsLines);
+        //demo.run(pointsLines);
         //demo.run(circlesAndEllipses);
+        demo.run(curves);
 
-        // iDemoContent conicSections = new ConicSections();
-        // demo.run(conicSections);
-
-        // iDemoContent polynomialsAndSplines = new PolynomialsAndSplines();
-        // demo.run(polynomialsAndSplines);
 
     }
 }

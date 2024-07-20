@@ -2,6 +2,67 @@ package nttn.core;
 
 import java.util.Arrays; 
 
+class Color {
+    private int r, g, b; 
+
+    public Color(int r, int g, int b) {
+        this.r = r; 
+        this.g = g; 
+        this.b = b; 
+    }
+
+    public int r() { return r; }
+    public int g() { return g; }
+    public int b() { return b; }
+}
+
+
+class Colors {
+    // TODO: this cause a lot of separate color allocation 
+    // group them using the ColorsArray -> which allocates all the colors as a single block then give access to it through something else
+    public static final Color RED = new Color(255, 0, 0);
+    public static final Color GREEN = new Color(0, 255, 0);
+    public static final Color BLUE = new Color(0, 0, 255);
+}
+
+class ColorsArray {
+
+}
+
+class ColorsMatrix {
+
+}
+
+class WorldCoordinate {
+    // TODO: inidivudial thinking /local optimized 
+    private float x = 0, y = 0, z = 0; 
+
+    public WorldCoordinate(float x, float y, float z) {
+        this.x = x;
+        this.y = y;
+        this.z = z;
+    }
+
+    public void set(float x, float y, float z) {
+        this.x = x;
+        this.y = y;
+        this.z = z;
+    }
+
+    public float x() { return x; } 
+    public float y() { return y; } 
+    public float z() { return z; } 
+}
+
+class WorldCoordinates {
+    // TODO: group thinking / global optimized 
+    // instead of an array like WorldCoordinate[] 
+    //      -> each object is allocated separately -> all of them are failure points and require complex mechanism to manage 
+    // we extracts the WorldCoordinate content into a continous array of values
+    // like this float[] coordinates then decode then ourselves in this class
+
+}
+
 public class GraphicsOutput { 
     private final byte a = (byte)255, r = (byte)255, g = (byte)255, b = (byte)255; 
     private final CommonMath m = new CommonMath();  
@@ -204,11 +265,21 @@ public class GraphicsOutput {
 
     }
 
-    public void fillArea() { // input: an array of vertices
+    public void fillArea(WorldCoordinate[] wcVertices) { // input: an array of vertices
 
     }
 
-    public void cellArray() {
+    public void fillArea(WorldCoordinates wcVertices) { // input: an array of vertices
+        // TODO: 
+
+    }
+
+    public void cellArray(WorldCoordinate[] wcPoints, Color[][] pixels) {
+
+    }
+
+    public void cellArray(WorldCoordinates wcPoints, ColorsMatrix pixels) {
+        // TODO: 
 
     }
 }
